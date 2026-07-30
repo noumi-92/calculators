@@ -1,5 +1,4 @@
-import { View, Text } from "react-native";
-import styles from "./styles/setting_styles.js";
+import { View, Text, StyleSheet} from "react-native";
 
 
 
@@ -10,3 +9,16 @@ export default function Setting(){
     </View>
     );    
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#e7c5f7',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  headingText: {
+    fontSize: 32,
+    marginBottom: 20
+  }
+});

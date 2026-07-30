@@ -1,5 +1,4 @@
-import { View, Text } from "react-native";
-import styles from "./styles/calculators_styles";
+import { View, Text, StyleSheet } from "react-native";
 
 
 export default function Calculators(){
@@ -9,3 +8,16 @@ export default function Calculators(){
     </View>
     );    
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#d5f7c5',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  headingText: {
+    fontSize: 32,
+    marginBottom: 20
+  }
+});
