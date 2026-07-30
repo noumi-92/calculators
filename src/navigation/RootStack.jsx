@@ -6,6 +6,7 @@ import Dashboard from '../views/home/dashboard/Dashboard';
 import LoginView from '../views/auth/LoginView';
 import RegisterView from '../views/auth/RegisterView';
 import Welcome from '../views/auth/Welcome';
+import Home from '../views/home/Home';
 
 const Stack = createNativeStackNavigator();
 const options = {
@@ -31,21 +32,7 @@ export default function RootStack() {
                 title: "Login Here",
             }} />
             <Stack.Screen name="Register" component={RegisterView} options={{ title: "Register Here" }} />
-            <Stack.Screen name="Dashboard" component={Dashboard} options={{
-                title: "Dashboard",
-                headerRight: () => (
-                    <Image
-                        source={require("../../assets/favicon.png")}
-                        style={{
-                            width: 40,
-                            height: 40,
-                            borderRadius: 20,
-                            marginLeft: 15,
-                        }}
-                    />
-                ),
-
-            }} />
+            <Stack.Screen name="Dashboard" component={Home} options={{headerShown: false}} />
         </Stack.Navigator>
     );
 }

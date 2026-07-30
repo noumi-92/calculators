@@ -16,6 +16,8 @@ import Learning from "./components/Learning";
 import Activity from "./components/Activity";
 import styles from './styles/dashboard_styles';
 
+
+
 export default function Dashboard() {
   return (
     <SafeAreaView style={styles.container}>
