@@ -6,19 +6,15 @@ import Welcome from './src/views/auth/Welcome';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Dashboard from './src/views/home/dashboard/Dashboard';
+import RootStack from './src/navigation/RootStack';
 
 
-const Stack = createNativeStackNavigator();
+
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Welcome" component={Welcome} />
-        <Stack.Screen name="Login" component={LoginView} />
-        <Stack.Screen name="Register" component={RegisterView} />
-        <Stack.Screen name="Dashboard" component={Dashboard} />
-      </Stack.Navigator>
+        <RootStack/>
     </NavigationContainer> 
   );
 }

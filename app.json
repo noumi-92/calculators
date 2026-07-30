@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "CalculatorApp",
-    "slug": "CalculatorApp",
+    "slug": "calculator-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,10 +15,17 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "package": "com.noumi.developer.calculatorapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e3394a34-fafd-452b-900a-d757fda1c2a5"
+      }
+    },
+    "owner": "noumi.developer"
   }
 }
