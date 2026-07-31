@@ -17,13 +17,13 @@ export default function Register() {
             <View style={styles.registerForm}>
                 <TextInput style={styles.emailField} placeholder="Enter your email" keyboardType='email-address' />
                 <TextInput style={styles.passwordField} placeholder="Enter your password" secureTextEntry={true} />
-                <TouchableOpacity style={styles.registerButton} onPress={() => {navigation.navigate("Dashboard");}}>
+                <TouchableOpacity style={styles.registerButton} onPress={() => {navigation.reset({ index: 0, routes: [{ name: "Home" }] });}}>
                     <Text style={styles.registerButtonText}>Register</Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.loginTextView}>
                 <Text>Already have account?</Text>
-                <TouchableOpacity onPress={() => {navigation.navigate("Login");}}>
+                <TouchableOpacity onPress={() => {navigation.reset({ index: 0, routes: [{ name: "Login" }] });}}>
                     <Text> Login Here</Text>
                 </TouchableOpacity>
             </View>

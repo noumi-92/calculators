@@ -39,14 +39,14 @@ export default function Login() {
                 />
                 <TouchableOpacity
                     style={styles.loginButton}
-                    onPress={() => {navigation.navigate("Dashboard");}}
+                    onPress={() => {navigation.reset({ index: 0, routes: [{ name: "Home" }] });}}
                 >
                     <Text style={styles.loginButtonText}>Login</Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.registerTextView}>
                 <Text>Don't have account?</Text>
-                <TouchableOpacity onPress={() => {navigation.navigate("Register");}}>
+                <TouchableOpacity onPress={() => {navigation.reset({ index: 0, routes: [{ name: "Register" }] });}}>
                     <Text> Register Here</Text>
                 </TouchableOpacity>
             </View>
